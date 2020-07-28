@@ -8,13 +8,13 @@ public class Henkilo {
 
 
     private void setNimi(){
-        this.Nimi = Nimi;
+        this.Nimi = "Mikko Mallikas";
     }
     private void setOsoite(){
-        this.Osoite = Osoite;
+        this.Osoite = "Esimerkkikatu 12";
     }
     private void setSyntymaaika(){
-        this.Syntymaaika = Syntymaaika;
+        this.Syntymaaika = "12.34.5678";
     }
 
     private String getNimi(){
@@ -27,8 +27,9 @@ public class Henkilo {
         return Syntymaaika;
     }
 
-    private String getHenkilotiedot(){
-        String tiedot = Nimi + ", " + Osoite + ", " + Syntymaaika;
+
+    public String getHenkilotiedot(){
+        String tiedot = this.Nimi + ", " + this.Osoite + ", " + this.Syntymaaika;
         return tiedot;
     }
 
